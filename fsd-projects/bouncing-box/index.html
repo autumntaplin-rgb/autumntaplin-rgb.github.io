@@ -80,8 +80,17 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-
-        
+        moveBoxTo(200); // Moves box to x-position 200  
+         moveBoxTo(450); // Moves box to x-position 450
+        moveBoxTo(positionX); // Moves box to x-position
+        positionX = positionX + speed;
+        if (positionX > boardwidth) {
+          speed *= -1;
+          // code to reverse speed goes here
+        }
+           else if (positionX < 0) {
+            speed *= -1 *
+           }
 
           
         }
